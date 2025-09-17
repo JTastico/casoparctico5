@@ -1,11 +1,15 @@
 
 
+using System.Linq.Expressions;
+using Casopractico.Models;
+using Microsoft.EntityFrameworkCore;
+
 public class GenericRepository<T> : IGenericRepository<T> where T : class
 {
-   /* protected readonly DbContext _context;
+    protected readonly ConsultoriaDbContext _context;
     protected readonly DbSet<T> _dbSet;
 
-    public GenericRepository(DbContext context)
+    public GenericRepository(ConsultoriaDbContext context)
     {
         _context = context;
         _dbSet = _context.Set<T>();
@@ -39,5 +43,5 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
     public void Remove(T entity)
     {
         _dbSet.Remove(entity);
-    }*/
+    }
 }
