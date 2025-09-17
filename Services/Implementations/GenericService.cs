@@ -1,6 +1,6 @@
 public class GenericService<T> : IGenericService<T> where T : class
 {
-    private readonly IGenericRepository<T> _repository;
+   /* private readonly IGenericRepository<T> _repository;
 
     public GenericService(IGenericRepository<T> repository)
     {
@@ -37,5 +37,5 @@ public class GenericService<T> : IGenericService<T> where T : class
             _repository.Remove(entity);
             // Supongamos que se guarda en la base de datos aquí si es necesario.
         }
-    }
+    }*/
 }
