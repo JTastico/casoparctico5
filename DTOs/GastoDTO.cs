@@ -4,5 +4,5 @@ public class GastoDTO
     public int TareaId { get; set; }
     public string Descripcion { get; set; }
     public decimal Monto { get; set; }
-    public DateTime FechaGasto { get; set; }
+    public DateOnly FechaGasto { get; set; }
 }
